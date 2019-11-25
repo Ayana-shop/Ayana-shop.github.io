@@ -1,0 +1,21 @@
+/*
+access.css
+サンプルサイト「ひまわりパン」用CSS
+created by Mayuko Fujikawa
+*/
+
+/*=======================================
+アクセスページ
+=======================================*/
+
+/* 住所情報 */
+.addressBox {
+  float: left;
+  margin:0 20px 30px 0 ;
+  width: 400px;
+}
+
+.mapBox {
+  float:left;
+  width:740px;
+}

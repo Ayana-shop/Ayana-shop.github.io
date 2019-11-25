@@ -1,0 +1,202 @@
+/*
+style.css
+サンプルサイト「ひまわりパン」用CSS
+created by Mayuko Fujikawa
+*/
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+
+/*=======================================
+リセット
+=======================================*/
+
+html,body,h1,h2,h3,h4,ul,ol,dl,li,dt,dd,p,div,span,img,a,table,tr,th,td {
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+article,
+header,
+footer,
+aside,
+figure,
+figcaption,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+main {
+  display:block; /* for IE11 */
+}
+
+/*=======================================
+共通部分
+=======================================*/
+
+/* サイト全体共通 */
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+body {
+  background-color: #F8F4E7;
+  font-family: 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+header,
+nav.gNavi,
+main
+ {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+/* ヘッダー */
+header {
+  background: url(../images/header_back.png) repeat-x;
+  height: 170px;
+}
+
+header .logo {
+  float: left;
+  padding: 30px 0 0 40px;
+}
+
+header .address {
+  float: right;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 50px 30px 0 0;
+}
+
+/* グローバルメニュー */
+nav.gNavi {
+  padding: 40px 0 30px;
+}
+
+nav.gNavi ul li a {
+  border-bottom: 3px solid #d6cca2;
+  color: #333;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 25px;
+  padding-bottom: 8px;
+  text-align: center;
+  text-decoration: none;
+  width: 200px;
+}
+
+nav.gNavi ul li a:hover {
+  border-bottom-color: #897101;
+}
+
+nav.gNavi ul .current a {
+  border-bottom-color: #897101;
+}
+
+/* 上下メニュー共通 */
+nav ul li {
+  display: inline-block;
+}
+
+/* フッター */
+footer {
+  background-color: #e4ddc6;
+  padding: 20px 0 30px;
+  text-align: center;
+}
+
+footer nav ul {
+  padding: 30px 30px 40px 0;
+}
+
+footer nav ul li a {
+  color: #333;
+  display: block;
+  font-size: 14px;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+footer .snsBtn li {
+  display: inline-block;
+  margin: 0 12px 20px;
+}
+
+footer .copyright {
+  font-size: 14px;
+}
+
+/* メインコンテンツ共通 */
+main {
+  display:block; /* for IE11 */
+  margin-bottom: 80px;
+}
+
+main p {
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+main a:link {
+  color: #1d297f;
+}
+
+main li {
+  line-height: 1.5;
+}
+
+main h1:not(.topCopy) {
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "ＭＳ 明朝", serif;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  background-color: #f5df80;
+  padding:20px 30px;
+  border-radius: 10px;
+}
+
+main h2 {
+  clear:both;
+  background: #f1e9d1 url(../images/leaf.png) no-repeat 5px 50%;
+  color: #79420d;
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding: 15px 15px 15px 50px;
+  font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+main h3 {
+  font-weight: bold;
+  font-size: 16px;
+  border-bottom:1px dotted #000;
+  padding-bottom:5px;
+  margin-bottom: 10px;
+}
+
+/* ページトップへ戻る */
+#pagetop{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  cursor:pointer;
+}
