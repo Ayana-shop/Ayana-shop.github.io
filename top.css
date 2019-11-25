@@ -1,0 +1,130 @@
+/*
+top.css
+サンプルサイト「ひまわりパン」用CSS
+created by Mayuko Fujikawa
+*/
+
+
+/*=======================================
+トップページ
+=======================================*/
+
+/* メインビジュアル */
+#topMainVisual {
+  margin-bottom:30px;
+}
+
+/* スライダーのボタン */
+.slick-dots {
+  bottom: 15px;
+}
+
+.slick-dots li {
+  padding: 0 5px;
+}
+
+.slick-dots li button:before {
+  font-size: 14px;
+  color: #fff;
+  opacity: 1;
+}
+.slick-dots li.slick-active button:before {
+  color: #ed4343;
+  opacity: 1;
+}
+
+/* 2段組みのレイアウト */
+.topContentsBox {
+  padding-top: 20px;   
+}
+
+.topInfoBox {
+  float: left;
+  margin-right: 30px;
+  width: 640px;
+}
+
+.topFacebookBox {
+  float: right;
+  width: 500px;
+}
+
+/* 2段組みのボックスの中身 */
+.topInfoBox .accessLink {
+  text-align: right;
+}
+
+.topCopy {
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "ＭＳ 明朝", serif;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.topNews {
+  margin: 0 20px;
+}
+
+.topNews li {
+  border-bottom: 1px dotted #897101;
+  padding: 15px 0;
+}
+
+/*Webフォント用の調整 */
+.topNews li .fa {
+  color: #79420d;
+  padding: 15px 10px 0 0;
+}
+
+/*3段組みのレイアウト */
+.topLinkBox {
+  clear: both;
+  margin-top: 50px;
+  width: 1170px;
+}
+
+.topLink {
+  float: left;
+  line-height: 0;
+  margin-right: 30px;
+  width: 370px;
+}
+
+.topLink:last-child {
+  margin-right: 0;
+}
+
+/*3段組みのボックスの中身 */
+.topLink a {
+  display: block;
+  text-align: center;
+}
+
+.topLink a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.topLink a:visited {
+  color:#ead59d;
+}
+
+.topLink a:hover {
+  opacity: 0.8;
+}
+
+.topLink a img {
+  border-radius: 10px 10px 0 0;
+}
+
+.topLink a span {
+  background-color: #79420d;
+  border-radius: 0 0 10px 10px;
+  display: block;
+  padding: 20px 0;
+}
+
+/*Webフォント用の調整 */
+.topLink a span i {
+  padding: 0 10px;
+}
